@@ -22,7 +22,191 @@
 </head>
 <body>
 
-  <h1>Hello, World!</h1>
+  <!-- Main Navigation START -->
+  <header>
+    <!-- Navbar START -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a href="#" class="navbar-brand waves-effect">
+          <strong class="blue-text">FivePanel</strong>
+        </a>
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Vis/skjul navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links START -->
+        <div class="collapse navbar-collapse" id="mobileNav">
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link waves-effect active">Forside
+                <span class="sr-only">(nuværende)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Om FivePanel</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Download FivePanel</a>
+            </li>
+          </ul>
+          <!-- Right -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Links END -->
+      </div>
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Sidebar START -->
+    <div class="sidebar-fixed position-fixed">
+      <a href="#" class="logo-wrapper waves-effect">
+        <img src="https://mdbootstrap.com/img/logo/mdb-email.png" class="img-fluid" alt="FivePanel Logo">
+      </a>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item waves-effect active">
+          <i class="fab fa-github mr-3"></i>Overblik
+        </a>
+        <a href="index.html" class="list-group-item waves-effect">
+          <i class="fab fa-github mr-3"></i>Brugere
+        </a>
+        <a href="index.html" class="list-group-item waves-effect">
+          <i class="fab fa-github mr-3"></i>Handlinger
+        </a>
+        <a href="index.html" class="list-group-item waves-effect">
+          <i class="fab fa-github mr-3"></i>Andet
+        </a>
+      </div>
+    </div>
+    <!-- Sidebar END -->
+  </header>
+  <!-- Main Navigation END -->
+
+  <!-- Main Layout START -->
+  <main class="pt-5 mx-lg-5">
+    <div class="container-fluid mt-5">
+      <!-- Heading -->
+      <div class="card mb-4 wow fadeIn">
+        <div class="card-body d-sm-flex justify-content-between">
+          <h2 class="h4 mb-2 mb-sm-0 pt-1">
+            <a href="#">FivePanel</a>
+            <span>/</span>
+            <span>Overblik</span>
+          </h2>
+
+          <form action="#" class="d-flex justify-content-center">
+            <input type="search" placeholder="Indtast dit søgeord.." aria-label="Søg" class="form-control">
+            <button class="btn btn-primary btn-sm my-0 p" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Grid Row START -->
+      <div class="row wow fadeIn">
+        <!-- First Column -->
+        <div class="col-md-9 mb-4">
+          <div class="card">
+            <div class="card-header text-center">
+              Personer whitelistet
+            </div>
+            <div class="card-body">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+        <!-- Second Column -->
+        <div class="col-md-3 mb-4">
+          <div class="card mb-4">
+            <div class="card-header text-center">
+              Personer i afdelinger
+            </div>
+            <div class="card-body">
+              <canvas id="pieChart"></canvas>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-header text-center">
+              Redskaber
+            </div>
+            <div class="card-body">
+              <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action waves-effect">Regler</a>
+                <a class="list-group-item list-group-item-action waves-effect">Regler</a>
+                <a class="list-group-item list-group-item-action waves-effect">Regler</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid Row END -->
+    </div>
+  </main>
+  <!-- Main Layout END -->
+
+  <!-- Footer START -->
+  <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+        <i class="fab fa-google-plus mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+        <i class="fab fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+        <i class="fab fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fab fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+        <i class="fab fa-codepen mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      &copy; 2020 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> FivePanel.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!-- Footer END -->
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -32,6 +216,8 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Charts -->
+  <script src="js/charts.js"></script>
   <!-- Custom Scripts -->
   <script src="js/scripts.js"></script>
   <!-- Custom Scripts for this page -->
